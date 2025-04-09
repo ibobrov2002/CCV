@@ -18,9 +18,6 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
-        env:
-        - name: SQLALCHEMY_DATABASE_URI
-          value: "mysql://admin:admin@mysql/balance"
 ---
 apiVersion: v1
 kind: Service
